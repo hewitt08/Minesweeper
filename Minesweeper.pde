@@ -139,7 +139,6 @@ public class MSButton
             for(int j = -1; j < 2; j++){
               if(((myRow+i != myRow) || (myCol+j != myCol)) && isValid(myRow+i, myCol+j) && !(buttons[myRow+i][myCol+j].clicked)){
                 buttons[myRow+i][myCol+j].mousePressed();
-                System.out.println((myRow+i) + "," + (myCol+j));
               }
             }
           }
