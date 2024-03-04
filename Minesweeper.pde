@@ -133,7 +133,7 @@ public class MSButton
         }else if(mines.contains(buttons[myRow][myCol])){
           displayLosingMessage();
         }else if(countMines(myRow, myCol) > 0){
-          myLabel = Integer.toString(countMines(myRow, myCol));
+          setLabel(countMines(myRow, myCol));
         }else{
           for(int i = -1; i < 2; i++){
             for(int j = -1; j < 2; j++){
